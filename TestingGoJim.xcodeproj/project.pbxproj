@@ -14,6 +14,8 @@
 		892CA8302A46876200052402 /* TestingGoJimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA82F2A46876200052402 /* TestingGoJimTests.swift */; };
 		892CA83A2A46876200052402 /* TestingGoJimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8392A46876200052402 /* TestingGoJimUITests.swift */; };
 		892CA83C2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */; };
+		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
+		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		892CA8352A46876200052402 /* TestingGoJimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingGoJimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		892CA8392A46876200052402 /* TestingGoJimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITests.swift; sourceTree = "<group>"; };
 		892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
 				892CA81F2A46875F00052402 /* ContentView.swift */,
+				892CA8482A4688BE00052402 /* FirstView.swift */,
+				892CA84A2A4688D200052402 /* SecondView.swift */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
 				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
 				892CA8232A46876200052402 /* Preview Content */,
@@ -261,6 +267,8 @@
 			files = (
 				892CA8202A46875F00052402 /* ContentView.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
+				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
+				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
