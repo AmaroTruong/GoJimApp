@@ -25,7 +25,6 @@
 		8901D01D2A469663006B09DD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D01C2A469663006B09DD /* FirebaseStorage */; };
 		8901D01F2A4698E7006B09DD /* CreateAccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */; };
 		8901D0232A469DBE006B09DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8901D0222A469DBE006B09DD /* GoogleService-Info.plist */; };
-		8901D0252A469F5F006B09DD /* ThirdViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901D0242A469F5F006B09DD /* ThirdViewApp.swift */; };
 		892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81D2A46875F00052402 /* TestingGoJimApp.swift */; };
 		892CA8202A46875F00052402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81F2A46875F00052402 /* ContentView.swift */; };
 		892CA8222A46876200052402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892CA8212A46876200052402 /* Assets.xcassets */; };
@@ -59,7 +58,6 @@
 		8901CFFF2A4695E1006B09DD /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountPage.swift; sourceTree = "<group>"; };
 		8901D0222A469DBE006B09DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8901D0242A469F5F006B09DD /* ThirdViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewApp.swift; sourceTree = "<group>"; };
 		892CA81A2A46875F00052402 /* TestingGoJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGoJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892CA81D2A46875F00052402 /* TestingGoJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimApp.swift; sourceTree = "<group>"; };
 		892CA81F2A46875F00052402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
-				8901D0242A469F5F006B09DD /* ThirdViewApp.swift */,
 				8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */,
 				8901CFFF2A4695E1006B09DD /* WelcomePage.swift */,
 				8901D0222A469DBE006B09DD /* GoogleService-Info.plist */,
@@ -332,7 +329,6 @@
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
 				8901D01F2A4698E7006B09DD /* CreateAccountPage.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
-				8901D0252A469F5F006B09DD /* ThirdViewApp.swift in Sources */,
 				8901D0002A4695E2006B09DD /* WelcomePage.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
