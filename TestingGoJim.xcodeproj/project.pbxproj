@@ -31,6 +31,8 @@
 		892CA83C2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */; };
 		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
 		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
+		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
+		8953B14F2A47A1570052F567 /* ActivityLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14E2A47A1570052F567 /* ActivityLogViewModel.swift */; };
 		89DA7D202A46A6490010A645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */; };
 		89F5FC3E2A47737000CC6FD0 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F5FC3D2A47737000CC6FD0 /* healthtips.json */; };
 		89F5FC402A478B3B00CC6FD0 /* ActivityLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5FC3F2A478B3A00CC6FD0 /* ActivityLogView.swift */; };
@@ -69,6 +71,8 @@
 		892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		8953B14E2A47A1570052F567 /* ActivityLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogViewModel.swift; sourceTree = "<group>"; };
 		89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89F5FC3D2A47737000CC6FD0 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 		89F5FC3F2A478B3A00CC6FD0 /* ActivityLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 			children = (
 				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
 				892CA81F2A46875F00052402 /* ContentView.swift */,
+				8953B14C2A479C640052F567 /* ActivityModel.swift */,
 				89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */,
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
@@ -146,6 +151,7 @@
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
 				89F5FC3F2A478B3A00CC6FD0 /* ActivityLogView.swift */,
 				89F5FC412A47909400CC6FD0 /* CreateNewLogView.swift */,
+				8953B14E2A47A1570052F567 /* ActivityLogViewModel.swift */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
 				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
 				892CA8232A46876200052402 /* Preview Content */,
@@ -334,8 +340,10 @@
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
 				89F5FC402A478B3B00CC6FD0 /* ActivityLogView.swift in Sources */,
+				8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */,
 				89F5FC422A47909400CC6FD0 /* CreateNewLogView.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
+				8953B14F2A47A1570052F567 /* ActivityLogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
