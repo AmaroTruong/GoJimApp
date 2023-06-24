@@ -49,7 +49,7 @@ struct ThirdView: View {
                             NavigationLink {
                                 CreateAccountPage()
                             } label: {
-                                Text("Login")
+                                Text("Create Account")
                                     .foregroundColor(.white)
                                     .frame(width: 200, height: 40)
                                     .background(.black)
