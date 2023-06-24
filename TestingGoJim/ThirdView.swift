@@ -39,7 +39,7 @@ struct ThirdView: View {
                                 .padding()
                         }
                     }
-                        Text("Join us!")
+                        Text("Join us")
                             .position(x: 215, y: 600)
                         NavigationLink(destination: CreateAccountPage()) {
                             Text("Create Account")
