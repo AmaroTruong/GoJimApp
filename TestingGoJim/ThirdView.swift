@@ -2,9 +2,12 @@ import SwiftUI
 
 struct ThirdView: View {
     @State private var quote: String = ""
-    let tips = Bundle.main.decode([Tips].self, from: "healthtips.json")
+    @State private var tips: [Tips] = []
+    @State private var selectedTip: Tips?
     
-    var healthTip : Tips { tips.randomElement()! }
+    var healthTip: Tips {
+        selectedTip ?? Tips(tip: "")
+    }
     
     var body: some View {
         NavigationView {
@@ -21,6 +24,7 @@ struct ThirdView: View {
                         .cornerRadius(30)
                         .padding()
                         .padding()
+                    
                     Button {
                         fetchData()
                     } label: {
@@ -31,19 +35,31 @@ struct ThirdView: View {
                             .cornerRadius(15)
                             .padding(.top, -20)
                     }
-                }.position(x: 210, y: 80)
+                }
+                .position(x: 210, y: 80)
+                .onAppear {
+                    fetchData()
+                    selectRandomTip()
+                }
+                
+                Image("logo")
+                    .resizable()
+                    .frame(width: 400, height: 100)
+                    .position(x: 200, y: 400)
                 
                 VStack {
                     Text("Tips for Beginners")
                         .frame(width: 150, height: 40)
                         .background(Color.white)
                         .cornerRadius(15)
-                    Text(healthTip.text)
+                    
+                    Text(healthTip.tip)
                         .foregroundColor(.white)
                         .frame(width: 300, height: 50)
                         .background(Color.black)
                         .cornerRadius(15)
-                }.position(x: 200, y: 700)
+                }
+                .position(x: 200, y: 700)
                 
                 HStack(spacing: 50) {
                     NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
@@ -80,9 +96,6 @@ struct ThirdView: View {
                 .position(x: 200, y: 840)
             }
         }
-        .onAppear {
-            fetchData()
-        }
     }
     
     func fetchData() {
@@ -107,44 +120,34 @@ struct ThirdView: View {
         
         task.resume()
     }
+    
+    func selectRandomTip() {
+        if tips.isEmpty {
+            let tipsURL = Bundle.main.url(forResource: "healthtips", withExtension: "json")!
+            if let tipsData = try? Data(contentsOf: tipsURL) {
+                let decoder = JSONDecoder()
+                do {
+                    let decodedTips = try decoder.decode([Tips].self, from: tipsData)
+                    DispatchQueue.main.async {
+                        self.tips = decodedTips
+                        self.selectedTip = decodedTips.randomElement()
+                    }
+                } catch {
+                    print("Error decoding health tips JSON: \(error)")
+                }
+            }
+        } else {
+            self.selectedTip = tips.randomElement()
+        }
+    }
 }
 
 struct InspirationQuote: Codable {
     let text: String
 }
 
-extension Bundle {
-    func decode<T: Decodable>(_ type: T.Type, from file: String, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in bundle.")
-        }
-
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) from bundle.")
-        }
-
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = dateDecodingStrategy
-        decoder.keyDecodingStrategy = keyDecodingStrategy
-
-        do {
-            return try decoder.decode(T.self, from: data)
-        } catch DecodingError.keyNotFound(let key, let context) {
-            fatalError("Failed to decode \(file) from bundle due to missing key '\(key.stringValue)' not found – \(context.debugDescription)")
-        } catch DecodingError.typeMismatch(_, let context) {
-            fatalError("Failed to decode \(file) from bundle due to type mismatch – \(context.debugDescription)")
-        } catch DecodingError.valueNotFound(let type, let context) {
-            fatalError("Failed to decode \(file) from bundle due to missing \(type) value – \(context.debugDescription)")
-        } catch DecodingError.dataCorrupted(_) {
-            fatalError("Failed to decode \(file) from bundle because it appears to be invalid JSON")
-        } catch {
-            fatalError("Failed to decode \(file) from bundle: \(error.localizedDescription)")
-        }
-    }
-}
-
 struct Tips: Codable {
-    let text: String
+    let tip: String
 }
 
 struct ThirdView_Previews: PreviewProvider {
@@ -152,6 +155,7 @@ struct ThirdView_Previews: PreviewProvider {
         ThirdView()
     }
 }
+
 
 
     
