@@ -10,6 +10,7 @@ import Foundation
 class ActivityLogViewModel : Identifiable , ObservableObject {
     
     @Published var activities : [Activity] = [
+        
     ]
     
     @Published var sortType : SortType = .alphabetical

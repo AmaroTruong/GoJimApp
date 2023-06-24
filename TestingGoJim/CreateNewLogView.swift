@@ -46,12 +46,6 @@ struct CreateNewLogView: View {
             
         }.navigationBarTitle("Add", displayMode: .inline)
             .navigationBarItems(
-                leading: Button(action:{
-                                presentationMode.wrappedValue.dismiss() },
-                                label : {
-                                    Text("Cancel")
-                                    .foregroundColor(.red)
-                                }),
                 trailing: Button(action:{activityVM.addActivity(activity: .init(name: name, date: date, type: type))
                     presentationMode.wrappedValue.dismiss()},
                                  label:{
@@ -62,6 +56,8 @@ struct CreateNewLogView: View {
             
 struct CreateNewLogView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateNewLogView(activityVM: ActivityLogViewModel())
+        let activityVM = ActivityLogViewModel()
+        activityVM.addActivity(activity: Activity(name: "Sample Activity", date: Date(), type: .dietary))
+        return CreateNewLogView(activityVM: activityVM)
     }
 }

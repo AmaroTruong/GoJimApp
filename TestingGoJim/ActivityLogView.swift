@@ -17,7 +17,7 @@ struct ActivityLogView: View {
                 VStack(spacing: 0) {
                     Text("Log Your Workouts")
                         .font(.system(size: 30))
-                    NavigationLink(destination: CreateNewLogView(activityVM: ActivityLogViewModel()).navigationBarBackButtonHidden(false)) {
+                    NavigationLink(destination: CreateNewLogView(activityVM: ActivityLogViewModel())) {
                         Text("Create a New Log")
                             .foregroundColor(.white)
                             .frame(width: 200, height: 40)
