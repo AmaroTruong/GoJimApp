@@ -4,7 +4,6 @@
 //
 //  Created by Jackie Cheng on 6/22/23.
 //
-
 import SwiftUI
 
 struct SecondView: View {
