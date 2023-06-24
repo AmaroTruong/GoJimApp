@@ -1,76 +1,71 @@
 import SwiftUI
-import Firebase
-import FirebaseAuth
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        FirebaseApp.configure()
-
-        return true
-    }
-}
+import Foundation
 
 struct ThirdView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
-    
+    @State private var quote: String = ""
     var body: some View {
         NavigationView {
             ZStack {
+                Color("LightRed")
+                    .ignoresSafeArea()
                 VStack {
-                    HStack {
-                        Text("Already Have An Account?")
-                    }
-                    HStack {
-                        Image(systemName: "person")
-                        TextField("Username", text: $username)
-                    }.frame(width: 400, height: 10)
-                    HStack {
-                        SecureField("Password", text: $password)
-                    }.frame(width: 345, height: 10)
-                    Button(action: login) {
-                        NavigationLink(destination: FirstView().navigationBarBackButtonHidden(true)) {
-                            Text("Login")
-                                .foregroundColor(.white)
-                                .frame(width: 200, height: 40)
-                                .background(Color.black)
-                                .cornerRadius(15)
-                                .padding()
+                    Text(quote)
+                        .foregroundColor(.white)
+                    Button {
+                        Task {
+                            let (data, _) = try await URLSession.shared.data(from: URL(string:"https://type.fit/api/quotes")!)
+                            let decodedResponse = try? JSONDecoder().decode(InspirationQuote.self, from: data)
+                            quote = decodedResponse?.value ?? ""
                         }
-                    }
-                        Text("Join us")
-                            .position(x: 215, y: 600)
-                        NavigationLink(destination: CreateAccountPage()) {
-                            Text("Create Account")
-                                .foregroundColor(.white)
-                                .frame(width: 200, height: 40)
-                                .background(Color.black)
-                                .cornerRadius(15)
-                                .padding()
-                        }
+                    } label: {
+                        Text("Generate New Quote")
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 40)
+                            .background(.black)
+                            .cornerRadius(15)
+                            .padding()
                     }
                 }
-            }
-        }
-        
-        func register() {
-            Auth.auth().createUser(withEmail: username, password: password) { authResult, error in
-                if let error = error {
-                    print(error.localizedDescription)
+                HStack(spacing: 50) {
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "house")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "message.fill")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "newspaper.fill")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "figure.strengthtraining.traditional")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "map.fill")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
                 }
-            }
-        }
-        
-        func login() {
-            Auth.auth().signIn(withEmail: username, password: password) { result, error in
-                if let error = error {
-                    print(error.localizedDescription)
-                }
+                .position(x: 200, y: 840)
             }
         }
     }
-    
+}
+struct InspirationQuote: Codable {
+    let value: String
+}
     struct ThirdView_Previews: PreviewProvider {
         static var previews: some View {
             ThirdView()
