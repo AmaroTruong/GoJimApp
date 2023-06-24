@@ -68,6 +68,14 @@ struct ThirdView: View {
         }
     }
     
+    func login(){
+        Auth.auth().signIn(withEmail: username, password: password){ result, error in
+            if error != nil{
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
     struct ThirdView_Previews: PreviewProvider {
         static var previews: some View {
             ThirdView()
