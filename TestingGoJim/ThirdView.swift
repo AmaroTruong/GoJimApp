@@ -3,7 +3,19 @@
 //  TestingGoJim
 //
 //  Created by Jackie Cheng on 6/23/23.
+
 import SwiftUI
+import FirebaseCore
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 struct ThirdView: View {
     @State private var username: String = ""
@@ -54,4 +66,17 @@ struct ThirdView_Previews: PreviewProvider {
     static var previews: some View {
         ThirdView()
     }
+}
+
+struct YourApp: App {
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        ThirdView()
+      }
+    }
+  }
 }
