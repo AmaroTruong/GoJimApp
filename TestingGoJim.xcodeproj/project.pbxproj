@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CFFD2A4693D1006B09DD /* ThirdView.swift */; };
-		8901D0002A4695E2006B09DD /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CFFF2A4695E1006B09DD /* WelcomePage.swift */; };
 		8901D0032A469663006B09DD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D0022A469663006B09DD /* FirebaseAnalytics */; };
 		8901D0052A469663006B09DD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D0042A469663006B09DD /* FirebaseAnalyticsOnDeviceConversion */; };
 		8901D0072A469663006B09DD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D0062A469663006B09DD /* FirebaseAuth */; };
@@ -23,7 +22,6 @@
 		8901D0192A469663006B09DD /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D0182A469663006B09DD /* FirebasePerformance */; };
 		8901D01B2A469663006B09DD /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D01A2A469663006B09DD /* FirebaseRemoteConfig */; };
 		8901D01D2A469663006B09DD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8901D01C2A469663006B09DD /* FirebaseStorage */; };
-		8901D01F2A4698E7006B09DD /* CreateAccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */; };
 		892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81D2A46875F00052402 /* TestingGoJimApp.swift */; };
 		892CA8202A46875F00052402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81F2A46875F00052402 /* ContentView.swift */; };
 		892CA8222A46876200052402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892CA8212A46876200052402 /* Assets.xcassets */; };
@@ -34,6 +32,7 @@
 		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
 		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
 		89DA7D202A46A6490010A645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */; };
+		89F5FC3E2A47737000CC6FD0 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F5FC3D2A47737000CC6FD0 /* healthtips.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 
 /* Begin PBXFileReference section */
 		8901CFFD2A4693D1006B09DD /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
-		8901CFFF2A4695E1006B09DD /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
-		8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountPage.swift; sourceTree = "<group>"; };
 		892CA81A2A46875F00052402 /* TestingGoJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGoJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892CA81D2A46875F00052402 /* TestingGoJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimApp.swift; sourceTree = "<group>"; };
 		892CA81F2A46875F00052402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +68,7 @@
 		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89F5FC3D2A47737000CC6FD0 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +138,8 @@
 				89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */,
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
+				89F5FC3D2A47737000CC6FD0 /* healthtips.json */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
-				8901D01E2A4698E7006B09DD /* CreateAccountPage.swift */,
-				8901CFFF2A4695E1006B09DD /* WelcomePage.swift */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
 				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
 				892CA8232A46876200052402 /* Preview Content */,
@@ -299,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */,
+				89F5FC3E2A47737000CC6FD0 /* healthtips.json in Resources */,
 				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
 				89DA7D202A46A6490010A645 /* GoogleService-Info.plist in Resources */,
 			);
@@ -327,9 +325,7 @@
 			files = (
 				892CA8202A46875F00052402 /* ContentView.swift in Sources */,
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
-				8901D01F2A4698E7006B09DD /* CreateAccountPage.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
-				8901D0002A4695E2006B09DD /* WelcomePage.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
 			);
