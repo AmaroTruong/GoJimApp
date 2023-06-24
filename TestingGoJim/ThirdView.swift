@@ -33,8 +33,8 @@ struct ThirdView: View {
                     HStack {
                         SecureField("Password", text: $password)
                     }.frame(width: 345, height: 10)
-                    NavigationLink {
-                        WelcomePage()
+                    Button {
+                        login()
                     } label: {
                         Text("Login")
                             .foregroundColor(.white)
