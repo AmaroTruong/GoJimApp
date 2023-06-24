@@ -29,7 +29,7 @@ struct SecondView: View {
                                 .font(.system(size:70))
                                 .frame(width: 300, height: 500)
                                 .position(x: 180, y: 380)
-                NavigationLink(destination: FirstView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: ThirdView().navigationBarBackButtonHidden(true)) {
                     Text("Get Started!")
                         .foregroundColor(.white)
                         .frame(width: 200, height: 40)
