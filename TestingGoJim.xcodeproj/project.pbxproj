@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81D2A46875F00052402 /* TestingGoJimApp.swift */; };
+		892CA8202A46875F00052402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA81F2A46875F00052402 /* ContentView.swift */; };
+		892CA8222A46876200052402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892CA8212A46876200052402 /* Assets.xcassets */; };
+		892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892CA8242A46876200052402 /* Preview Assets.xcassets */; };
+		892CA8302A46876200052402 /* TestingGoJimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA82F2A46876200052402 /* TestingGoJimTests.swift */; };
+		892CA83A2A46876200052402 /* TestingGoJimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8392A46876200052402 /* TestingGoJimUITests.swift */; };
+		892CA83C2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		892CA82C2A46876200052402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892CA8122A46875F00052402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 892CA8192A46875F00052402;
+			remoteInfo = TestingGoJim;
+		};
+		892CA8362A46876200052402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892CA8122A46875F00052402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 892CA8192A46875F00052402;
+			remoteInfo = TestingGoJim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		892CA81A2A46875F00052402 /* TestingGoJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGoJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		892CA81D2A46875F00052402 /* TestingGoJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimApp.swift; sourceTree = "<group>"; };
+		892CA81F2A46875F00052402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		892CA8212A46876200052402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		892CA8242A46876200052402 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		892CA8262A46876200052402 /* TestingGoJim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestingGoJim.entitlements; sourceTree = "<group>"; };
+		892CA82B2A46876200052402 /* TestingGoJimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingGoJimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		892CA82F2A46876200052402 /* TestingGoJimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimTests.swift; sourceTree = "<group>"; };
+		892CA8352A46876200052402 /* TestingGoJimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingGoJimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		892CA8392A46876200052402 /* TestingGoJimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITests.swift; sourceTree = "<group>"; };
+		892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		892CA8172A46875F00052402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8282A46876200052402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8322A46876200052402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		892CA8112A46875E00052402 = {
+			isa = PBXGroup;
+			children = (
+				892CA81C2A46875F00052402 /* TestingGoJim */,
+				892CA82E2A46876200052402 /* TestingGoJimTests */,
+				892CA8382A46876200052402 /* TestingGoJimUITests */,
+				892CA81B2A46875F00052402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		892CA81B2A46875F00052402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				892CA81A2A46875F00052402 /* TestingGoJim.app */,
+				892CA82B2A46876200052402 /* TestingGoJimTests.xctest */,
+				892CA8352A46876200052402 /* TestingGoJimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		892CA81C2A46875F00052402 /* TestingGoJim */ = {
+			isa = PBXGroup;
+			children = (
+				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
+				892CA81F2A46875F00052402 /* ContentView.swift */,
+				892CA8212A46876200052402 /* Assets.xcassets */,
+				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
+				892CA8232A46876200052402 /* Preview Content */,
+			);
+			path = TestingGoJim;
+			sourceTree = "<group>";
+		};
+		892CA8232A46876200052402 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				892CA8242A46876200052402 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		892CA82E2A46876200052402 /* TestingGoJimTests */ = {
+			isa = PBXGroup;
+			children = (
+				892CA82F2A46876200052402 /* TestingGoJimTests.swift */,
+			);
+			path = TestingGoJimTests;
+			sourceTree = "<group>";
+		};
+		892CA8382A46876200052402 /* TestingGoJimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				892CA8392A46876200052402 /* TestingGoJimUITests.swift */,
+				892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */,
+			);
+			path = TestingGoJimUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		892CA8192A46875F00052402 /* TestingGoJim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892CA83F2A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJim" */;
+			buildPhases = (
+				892CA8162A46875F00052402 /* Sources */,
+				892CA8172A46875F00052402 /* Frameworks */,
+				892CA8182A46875F00052402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingGoJim;
+			productName = TestingGoJim;
+			productReference = 892CA81A2A46875F00052402 /* TestingGoJim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		892CA82A2A46876200052402 /* TestingGoJimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892CA8422A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJimTests" */;
+			buildPhases = (
+				892CA8272A46876200052402 /* Sources */,
+				892CA8282A46876200052402 /* Frameworks */,
+				892CA8292A46876200052402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				892CA82D2A46876200052402 /* PBXTargetDependency */,
+			);
+			name = TestingGoJimTests;
+			productName = TestingGoJimTests;
+			productReference = 892CA82B2A46876200052402 /* TestingGoJimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		892CA8342A46876200052402 /* TestingGoJimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892CA8452A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJimUITests" */;
+			buildPhases = (
+				892CA8312A46876200052402 /* Sources */,
+				892CA8322A46876200052402 /* Frameworks */,
+				892CA8332A46876200052402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				892CA8372A46876200052402 /* PBXTargetDependency */,
+			);
+			name = TestingGoJimUITests;
+			productName = TestingGoJimUITests;
+			productReference = 892CA8352A46876200052402 /* TestingGoJimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		892CA8122A46875F00052402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					892CA8192A46875F00052402 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					892CA82A2A46876200052402 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 892CA8192A46875F00052402;
+					};
+					892CA8342A46876200052402 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 892CA8192A46875F00052402;
+					};
+				};
+			};
+			buildConfigurationList = 892CA8152A46875F00052402 /* Build configuration list for PBXProject "TestingGoJim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 892CA8112A46875E00052402;
+			productRefGroup = 892CA81B2A46875F00052402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				892CA8192A46875F00052402 /* TestingGoJim */,
+				892CA82A2A46876200052402 /* TestingGoJimTests */,
+				892CA8342A46876200052402 /* TestingGoJimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		892CA8182A46875F00052402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */,
+				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8292A46876200052402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8332A46876200052402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		892CA8162A46875F00052402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892CA8202A46875F00052402 /* ContentView.swift in Sources */,
+				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8272A46876200052402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892CA8302A46876200052402 /* TestingGoJimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892CA8312A46876200052402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892CA83C2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift in Sources */,
+				892CA83A2A46876200052402 /* TestingGoJimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		892CA82D2A46876200052402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 892CA8192A46875F00052402 /* TestingGoJim */;
+			targetProxy = 892CA82C2A46876200052402 /* PBXContainerItemProxy */;
+		};
+		892CA8372A46876200052402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 892CA8192A46875F00052402 /* TestingGoJim */;
+			targetProxy = 892CA8362A46876200052402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		892CA83D2A46876200052402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		892CA83E2A46876200052402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		892CA8402A46876200052402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestingGoJim/TestingGoJim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestingGoJim/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		892CA8412A46876200052402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestingGoJim/TestingGoJim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestingGoJim/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		892CA8432A46876200052402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingGoJim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingGoJim";
+			};
+			name = Debug;
+		};
+		892CA8442A46876200052402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingGoJim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingGoJim";
+			};
+			name = Release;
+		};
+		892CA8462A46876200052402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TestingGoJim;
+			};
+			name = Debug;
+		};
+		892CA8472A46876200052402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drexel.TestingGoJimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TestingGoJim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		892CA8152A46875F00052402 /* Build configuration list for PBXProject "TestingGoJim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892CA83D2A46876200052402 /* Debug */,
+				892CA83E2A46876200052402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892CA83F2A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892CA8402A46876200052402 /* Debug */,
+				892CA8412A46876200052402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892CA8422A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892CA8432A46876200052402 /* Debug */,
+				892CA8442A46876200052402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892CA8452A46876200052402 /* Build configuration list for PBXNativeTarget "TestingGoJimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892CA8462A46876200052402 /* Debug */,
+				892CA8472A46876200052402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 892CA8122A46875F00052402 /* Project object */;
+}
