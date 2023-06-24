@@ -38,6 +38,7 @@ struct ThirdView: View {
                                 .cornerRadius(15)
                                 .padding()
                         }
+                    }
                         Text("Join us!")
                             .position(x: 215, y: 600)
                         NavigationLink(destination: CreateAccountPage()) {
@@ -52,7 +53,6 @@ struct ThirdView: View {
                 }
             }
         }
-    }
         
         func register() {
             Auth.auth().createUser(withEmail: username, password: password) { authResult, error in
