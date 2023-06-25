@@ -32,6 +32,17 @@
 		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
 		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
+		89B53FF32A47CD810059B9FD /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B53FE82A47CD7F0059B9FD /* healthtips.json */; };
+		89B53FF42A47CD810059B9FD /* TaskItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FE92A47CD800059B9FD /* TaskItemExtension.swift */; };
+		89B53FF52A47CD810059B9FD /* DateScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FEA2A47CD800059B9FD /* DateScroller.swift */; };
+		89B53FF62A47CD810059B9FD /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FEB2A47CD800059B9FD /* TaskEditView.swift */; };
+		89B53FF72A47CD810059B9FD /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FEC2A47CD800059B9FD /* TaskCell.swift */; };
+		89B53FF82A47CD810059B9FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FED2A47CD800059B9FD /* Persistence.swift */; };
+		89B53FF92A47CD810059B9FD /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FEE2A47CD800059B9FD /* DateHolder.swift */; };
+		89B53FFA2A47CD810059B9FD /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FEF2A47CD800059B9FD /* TaskFilter.swift */; };
+		89B53FFB2A47CD810059B9FD /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FF02A47CD800059B9FD /* FloatingButton.swift */; };
+		89B53FFC2A47CD810059B9FD /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FF12A47CD800059B9FD /* TaskListView.swift */; };
+		89B53FFD2A47CD810059B9FD /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B53FF22A47CD810059B9FD /* CheckBoxView.swift */; };
 		89DA7D202A46A6490010A645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */; };
 		89F5FC3E2A47737000CC6FD0 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F5FC3D2A47737000CC6FD0 /* healthtips.json */; };
 /* End PBXBuildFile section */
@@ -69,6 +80,17 @@
 		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		89B53FE82A47CD7F0059B9FD /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
+		89B53FE92A47CD800059B9FD /* TaskItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskItemExtension.swift; path = ../../../Downloads/TaskItemExtension.swift; sourceTree = "<group>"; };
+		89B53FEA2A47CD800059B9FD /* DateScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateScroller.swift; path = ../../../Downloads/DateScroller.swift; sourceTree = "<group>"; };
+		89B53FEB2A47CD800059B9FD /* TaskEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskEditView.swift; path = ../../../Downloads/TaskEditView.swift; sourceTree = "<group>"; };
+		89B53FEC2A47CD800059B9FD /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskCell.swift; path = ../../../Downloads/TaskCell.swift; sourceTree = "<group>"; };
+		89B53FED2A47CD800059B9FD /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../../../Downloads/Persistence.swift; sourceTree = "<group>"; };
+		89B53FEE2A47CD800059B9FD /* DateHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHolder.swift; path = ../../../Downloads/DateHolder.swift; sourceTree = "<group>"; };
+		89B53FEF2A47CD800059B9FD /* TaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskFilter.swift; path = ../../../Downloads/TaskFilter.swift; sourceTree = "<group>"; };
+		89B53FF02A47CD800059B9FD /* FloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingButton.swift; path = ../../../Downloads/FloatingButton.swift; sourceTree = "<group>"; };
+		89B53FF12A47CD800059B9FD /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskListView.swift; path = ../../../Downloads/TaskListView.swift; sourceTree = "<group>"; };
+		89B53FF22A47CD810059B9FD /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBoxView.swift; path = ../../../Downloads/CheckBoxView.swift; sourceTree = "<group>"; };
 		89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89F5FC3D2A47737000CC6FD0 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
+				89B53FF22A47CD810059B9FD /* CheckBoxView.swift */,
+				89B53FEE2A47CD800059B9FD /* DateHolder.swift */,
+				89B53FEA2A47CD800059B9FD /* DateScroller.swift */,
+				89B53FF02A47CD800059B9FD /* FloatingButton.swift */,
+				89B53FE82A47CD7F0059B9FD /* healthtips.json */,
+				89B53FED2A47CD800059B9FD /* Persistence.swift */,
+				89B53FEC2A47CD800059B9FD /* TaskCell.swift */,
+				89B53FEB2A47CD800059B9FD /* TaskEditView.swift */,
+				89B53FEF2A47CD800059B9FD /* TaskFilter.swift */,
+				89B53FE92A47CD800059B9FD /* TaskItemExtension.swift */,
+				89B53FF12A47CD800059B9FD /* TaskListView.swift */,
 				892CA81F2A46875F00052402 /* ContentView.swift */,
 				8953B14C2A479C640052F567 /* ActivityModel.swift */,
 				89DA7D1F2A46A6490010A645 /* GoogleService-Info.plist */,
@@ -302,6 +335,7 @@
 				89F5FC3E2A47737000CC6FD0 /* healthtips.json in Resources */,
 				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
 				89DA7D202A46A6490010A645 /* GoogleService-Info.plist in Resources */,
+				89B53FF32A47CD810059B9FD /* healthtips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +360,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B53FF82A47CD810059B9FD /* Persistence.swift in Sources */,
 				892CA8202A46875F00052402 /* ContentView.swift in Sources */,
+				89B53FFC2A47CD810059B9FD /* TaskListView.swift in Sources */,
+				89B53FF52A47CD810059B9FD /* DateScroller.swift in Sources */,
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
+				89B53FF42A47CD810059B9FD /* TaskItemExtension.swift in Sources */,
+				89B53FF72A47CD810059B9FD /* TaskCell.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
+				89B53FF92A47CD810059B9FD /* DateHolder.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
+				89B53FFB2A47CD810059B9FD /* FloatingButton.swift in Sources */,
+				89B53FF62A47CD810059B9FD /* TaskEditView.swift in Sources */,
+				89B53FFA2A47CD810059B9FD /* TaskFilter.swift in Sources */,
 				8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
+				89B53FFD2A47CD810059B9FD /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
