@@ -14,9 +14,8 @@ struct CalculatorView: View {
     @State private var gender = ""
     @State private var age = ""
     @State private var mc = ""
-    
-    
-    
+    @State private var orm = ""
+    @State private var rep = ""
     
     var body: some View {
         ZStack {
@@ -87,10 +86,19 @@ struct CalculatorView: View {
         }
     }
     
-    
-    
-    
-    
+    func calculate1RM() {
+        guard let weightValue = Double(weight),
+              let reps = Double(rep),
+              weightValue > 0,
+              reps > 0
+        else {
+            orm = "Invalid input"
+            return
+        }
+        
+        let oneRepMax = weightValue / (1.0278) - (0.0278 * reps)
+        orm = String(format: "Your 1 Rep Max is :%.f", oneRepMax)
+    }
     
     func calculateBMI() {
         // guard is a form of input validation
@@ -102,7 +110,6 @@ struct CalculatorView: View {
             bmi = "Invalid input"
             return
         }
-        // "square function, divide weight (lb) by height (in) squared, multiply by 703, and round to one decimal place.
         
         let bmiValue = weightValue / (heightValue * heightValue) * 703
         bmi = String(format: "Your BMI is: %.1f", bmiValue)
@@ -126,7 +133,6 @@ struct CalculatorView: View {
             return
         }
     }
-    
    
     struct CalculatorView_Previews: PreviewProvider {
         static var previews: some View {
