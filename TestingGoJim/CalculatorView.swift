@@ -81,10 +81,6 @@ struct CalculatorView: View {
                         .padding()
                         
                         Text(mc)
-                        .foregroundColor(.black)
-                        .padding()
-                        .background(Color.white)
-                        .cornerRadius(15)
                     }
                 }
             }
