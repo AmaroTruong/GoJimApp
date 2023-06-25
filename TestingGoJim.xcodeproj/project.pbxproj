@@ -32,6 +32,9 @@
 		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
 		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
 		894BE2902A47EF5A00DA7893 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 894BE28F2A47EF5A00DA7893 /* healthtips.json */; };
+		894BE2922A48B11A00DA7893 /* RunningMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2912A48B11A00DA7893 /* RunningMapView.swift */; };
+		894BE2942A48B2F000DA7893 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2932A48B2F000DA7893 /* Location.swift */; };
+		894BE29B2A48BA0400DA7893 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29A2A48BA0400DA7893 /* LocationManager.swift */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
 		9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,10 @@
 		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		894BE28F2A47EF5A00DA7893 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
+		894BE2912A48B11A00DA7893 /* RunningMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningMapView.swift; sourceTree = "<group>"; };
+		894BE2932A48B2F000DA7893 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		894BE2952A48B60A00DA7893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		894BE29A2A48BA0400DA7893 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +142,7 @@
 		892CA81C2A46875F00052402 /* TestingGoJim */ = {
 			isa = PBXGroup;
 			children = (
+				894BE2952A48B60A00DA7893 /* Info.plist */,
 				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
 				892CA81F2A46875F00052402 /* ContentView.swift */,
 				8953B14C2A479C640052F567 /* ActivityModel.swift */,
@@ -142,6 +150,9 @@
 				892CA84A2A4688D200052402 /* SecondView.swift */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
 				9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */,
+				894BE2912A48B11A00DA7893 /* RunningMapView.swift */,
+				894BE29A2A48BA0400DA7893 /* LocationManager.swift */,
+				894BE2932A48B2F000DA7893 /* Location.swift */,
 				894BE28F2A47EF5A00DA7893 /* healthtips.json */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
 				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
@@ -326,8 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				892CA8202A46875F00052402 /* ContentView.swift in Sources */,
+				894BE2922A48B11A00DA7893 /* RunningMapView.swift in Sources */,
+				894BE29B2A48BA0400DA7893 /* LocationManager.swift in Sources */,
 				9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */,
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
+				894BE2942A48B2F000DA7893 /* Location.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
 				8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */,
@@ -493,7 +507,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestingGoJim/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingGoJim/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -522,7 +538,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestingGoJim/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingGoJim/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
