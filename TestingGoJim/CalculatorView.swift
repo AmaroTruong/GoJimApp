@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CalculatorView: View {
-    @State private var weight: String = ""
+    @State private var bodyWeight: String = ""
     @State private var height: String = ""
     @State private var bmi = ""
     @State private var gender = ""
@@ -16,6 +16,9 @@ struct CalculatorView: View {
     @State private var mc = ""
     @State private var orm = ""
     @State private var rep = ""
+    @State private var repWeight = ""
+    @State private var maintainWeight = ""
+
     
     var body: some View {
         ZStack {
@@ -23,7 +26,7 @@ struct CalculatorView: View {
                 .ignoresSafeArea()
             VStack {
                 Group {
-                    TextField("Weight(lbs)", text: $weight)
+                    TextField("Weight(lbs)", text: $bodyWeight)
                         .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
@@ -47,7 +50,7 @@ struct CalculatorView: View {
                 
                 VStack {
                     Group {
-                        TextField("Weight(lbs)", text: $orm)
+                        TextField("Weight(lbs)", text: $repWeight)
                             .padding()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
@@ -79,7 +82,7 @@ struct CalculatorView: View {
                             .padding()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        TextField("Weight(lbs)", text: $weight)
+                        TextField("Weight(lbs)", text: $maintainWeight)
                             .padding()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
@@ -115,7 +118,7 @@ struct CalculatorView: View {
     }
     
     func calculate1RM() {
-        guard let weightValue = Double(weight),
+        guard let weightValue = Double(repWeight),
               let reps = Double(rep),
               weightValue > 0,
               reps > 0
@@ -124,13 +127,13 @@ struct CalculatorView: View {
             return
         }
         
-        let oneRepMax = weightValue / (1.0278) - (0.0278 * reps)
-        orm = String(format: "Your 1 Rep Max is :%.f", oneRepMax)
+        let oneRepMax = weightValue / ((1.0278) - (0.0278 * reps))
+        orm = String(format: "Your 1 Rep Max is: %.f", oneRepMax)
     }
     
     func calculateBMI() {
         // guard is a form of input validation
-        guard let weightValue = Double(weight),
+        guard let weightValue = Double(bodyWeight),
               let heightValue = Double(height),
               weightValue > 0,
               heightValue > 0
@@ -146,7 +149,7 @@ struct CalculatorView: View {
     
     func calculateMC() {
         if let ageValue = Double(age),
-           let weightValue = Double(weight),
+           let weightValue = Double(maintainWeight),
            let heightValue = Double(height),
            weightValue > 0,
            heightValue > 0 {
