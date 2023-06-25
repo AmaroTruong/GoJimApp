@@ -31,9 +31,9 @@
 		892CA83C2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */; };
 		892CA8492A4688BE00052402 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA8482A4688BE00052402 /* FirstView.swift */; };
 		892CA84B2A4688D200052402 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CA84A2A4688D200052402 /* SecondView.swift */; };
-		894BE28C2A47E1F700DA7893 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 894BE28B2A47E1F700DA7893 /* healthtips.json */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
 		9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */; };
+		9C9B28FC2A47E74F002D9B6D /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C9B28FB2A47E74F002D9B6D /* healthtips.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +68,9 @@
 		892CA83B2A46876200052402 /* TestingGoJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGoJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		892CA8482A4688BE00052402 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		892CA84A2A4688D200052402 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		894BE28B2A47E1F700DA7893 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		9C9B28FB2A47E74F002D9B6D /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../Desktop/healthtips.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 				8953B14C2A479C640052F567 /* ActivityModel.swift */,
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
-				894BE28B2A47E1F700DA7893 /* healthtips.json */,
+				9C9B28FB2A47E74F002D9B6D /* healthtips.json */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
 				9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
@@ -299,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */,
+				9C9B28FC2A47E74F002D9B6D /* healthtips.json in Resources */,
 				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
-				894BE28C2A47E1F700DA7893 /* healthtips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

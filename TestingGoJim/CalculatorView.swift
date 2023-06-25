@@ -44,6 +44,34 @@ struct CalculatorView: View {
                     
                     Text(bmi)
                 }
+                
+                VStack {
+                    Group {
+                        TextField("Weight(lbs)", text: $orm)
+                            .padding()
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        
+                        TextField("Reps", text: $rep)
+                            .padding()
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        
+                        Button("Calculate 1RM") {
+                            calculate1RM()
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 200, height: 40)
+                        .background(.black)
+                        .cornerRadius(15)
+                        .padding()
+                        
+                        Text(orm)
+                    }
+                }
+                
+                
+                
                 VStack{
                     Group {
                         
