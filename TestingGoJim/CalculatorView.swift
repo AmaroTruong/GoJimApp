@@ -10,6 +10,7 @@ import SwiftUI
 struct CalculatorView: View {
     @State private var bodyWeight: String = ""
     @State private var height: String = ""
+    @State private var height2: String = ""
     @State private var bmi = ""
     @State private var gender = ""
     @State private var age = ""
@@ -27,14 +28,12 @@ struct CalculatorView: View {
             VStack {
                 Group {
                     TextField("Weight(lbs)", text: $bodyWeight)
-                        .padding()
+                        .padding(.bottom, 0)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    
-                    TextField("Height(inches)", text: $height)
-                        .padding()
+                    TextField("Height(in)", text: $height)
+                        .padding(.bottom, 10)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    
                     
                     Button("Calculate BMI") {
                         calculateBMI()
@@ -43,20 +42,22 @@ struct CalculatorView: View {
                     .frame(width: 200, height: 40)
                     .background(.black)
                     .cornerRadius(15)
-                    .padding()
+                    .padding(.bottom, -5)
+                    .position(x: 200, y: 20)
                     
                     Text(bmi)
+                        .position(x: 200, y: -30)
                 }
                 
                 VStack {
                     Group {
                         TextField("Weight(lbs)", text: $repWeight)
-                            .padding()
+                            .padding(.bottom, 20)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         
                         TextField("Reps", text: $rep)
-                            .padding()
+                            .padding(.bottom, -5)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         
@@ -67,10 +68,12 @@ struct CalculatorView: View {
                         .frame(width: 200, height: 40)
                         .background(.black)
                         .cornerRadius(15)
-                        .padding()
+                        .padding(.bottom, -5)
+                        .position(x: 200, y: 30)
                         
                         Text(orm)
-                    }
+                            .position(x: 200, y: 50)
+                    }.position(x: 200, y: -70)
                 }
                 
                 
@@ -79,15 +82,15 @@ struct CalculatorView: View {
                     Group {
                         
                         TextField("Age(Years)", text: $age)
-                            .padding()
+                            .padding(.bottom, 0)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         TextField("Weight(lbs)", text: $maintainWeight)
-                            .padding()
+                            .padding(.bottom, 0)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        TextField("Height(inches)", text: $height)
-                            .padding()
+                        TextField("Height(inches)", text: $height2)
+                            .padding(.bottom, -5)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         Text("Select Gender")
@@ -150,7 +153,7 @@ struct CalculatorView: View {
     func calculateMC() {
         if let ageValue = Double(age),
            let weightValue = Double(maintainWeight),
-           let heightValue = Double(height),
+           let heightValue = Double(height2),
            weightValue > 0,
            heightValue > 0 {
             
