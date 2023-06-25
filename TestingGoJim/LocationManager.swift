@@ -8,24 +8,31 @@
 import MapKit
 import CoreLocation
 
-class LocationManager: NSObject,CLLocationManagerDelegate, ObservableObject {
+class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var region = MKCoordinateRegion()
-    private let manager = CLLocationManager()
+    let manager = CLLocationManager() // Change access level to internal
     
     override init() {
-            super.init()
-            manager.delegate = self
-            manager.desiredAccuracy = kCLLocationAccuracyBest
-            manager.requestWhenInUseAuthorization()
-            manager.startUpdatingLocation()
-        }
+        super.init()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            locations.last.map {
-                region = MKCoordinateRegion(
-                    center: CLLocationCoordinate2D(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude),
-                    span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
-                )
-            }
-        }
+        guard let lastLocation = locations.last else { return }
+        
+        region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: lastLocation.coordinate.latitude,
+                longitude: lastLocation.coordinate.longitude
+            ),
+            span: MKCoordinateSpan(
+                latitudeDelta: 0.5,
+                longitudeDelta: 0.5
+            )
+        )
+    }
 }
+

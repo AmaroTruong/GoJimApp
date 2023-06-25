@@ -73,7 +73,7 @@ struct CalculatorView: View {
                         
                         Text(orm)
                             .position(x: 200, y: 50)
-                    }.position(x: 200, y: -70)
+                    }.position(x: 211, y: -70)
                 }
                 
                 
@@ -116,6 +116,34 @@ struct CalculatorView: View {
                         Text(mc)
                     }
                 }
+                HStack(spacing: 50) {
+                    NavigationLink(destination: ThirdView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "house")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "message.fill")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    
+                    NavigationLink(destination: CalculatorView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "figure.strengthtraining.traditional")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                    NavigationLink(destination: RunningMapView().navigationBarBackButtonHidden(true)) {
+                        Image(systemName: "map.fill")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 25, height: 25)
+                    }
+                }
+                .position(x: 200, y: 100)
             }
         }
     }

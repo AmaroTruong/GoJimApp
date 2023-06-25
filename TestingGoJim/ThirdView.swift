@@ -62,7 +62,7 @@ struct ThirdView: View {
                 .position(x: 200, y: 700)
                 
                 HStack(spacing: 50) {
-                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: ThirdView().navigationBarBackButtonHidden(true)) {
                         Image(systemName: "house")
                             .resizable()
                             .foregroundColor(.black)
@@ -74,19 +74,14 @@ struct ThirdView: View {
                             .foregroundColor(.black)
                             .frame(width: 25, height: 25)
                     }
-                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
-                        Image(systemName: "newspaper.fill")
-                            .resizable()
-                            .foregroundColor(.black)
-                            .frame(width: 25, height: 25)
-                    }
-                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                    
+                    NavigationLink(destination: CalculatorView().navigationBarBackButtonHidden(true)) {
                         Image(systemName: "figure.strengthtraining.traditional")
                             .resizable()
                             .foregroundColor(.black)
                             .frame(width: 25, height: 25)
                     }
-                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: RunningMapView().navigationBarBackButtonHidden(true)) {
                         Image(systemName: "map.fill")
                             .resizable()
                             .foregroundColor(.black)

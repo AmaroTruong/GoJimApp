@@ -36,6 +36,7 @@
 		894BE2942A48B2F000DA7893 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2932A48B2F000DA7893 /* Location.swift */; };
 		894BE29B2A48BA0400DA7893 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29A2A48BA0400DA7893 /* LocationManager.swift */; };
 		894BE29D2A48CAE400DA7893 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29C2A48CAE300DA7893 /* Stopwatch.swift */; };
+		894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
 		9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		894BE2952A48B60A00DA7893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		894BE29A2A48BA0400DA7893 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		894BE29C2A48CAE300DA7893 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewModel.swift; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
 				9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */,
 				894BE2912A48B11A00DA7893 /* RunningMapView.swift */,
+				894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */,
 				894BE29C2A48CAE300DA7893 /* Stopwatch.swift */,
 				894BE29A2A48BA0400DA7893 /* LocationManager.swift */,
 				894BE2932A48B2F000DA7893 /* Location.swift */,
@@ -347,6 +350,7 @@
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
 				894BE2942A48B2F000DA7893 /* Location.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
+				894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
 				8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
