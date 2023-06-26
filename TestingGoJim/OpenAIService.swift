@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class OpenAIService {
-    let apiKey = "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"
+    let apiKey = ""
     private let endpointUrl = "https://api.openai.com/v1/chat/completions"
     
     func sendMessage(messages: [Message]) async -> OpenAIChatResponse? {
