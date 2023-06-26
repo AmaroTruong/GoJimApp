@@ -2,7 +2,7 @@ import Foundation
 
 extension ChatView {
     class ViewModel: ObservableObject {
-        @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "You are a personal trainer. You will help me to workout", createAt: Date())]
+        @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "You are a personal trainer. You will help me to workout. You do not have enough information outside of working out, nutrition and health suggestions to give a response, Ensure your response is no more than 2 sentences but contains enough detail and examples to fully answer the question", createAt: Date())]
         @Published var currentInput: String = ""
 
         private let openAIService = OpenAIService()
