@@ -29,10 +29,12 @@ struct CalculatorView: View {
                 Group {
                     TextField("Weight(lbs)", text: $bodyWeight)
                         .padding(.bottom, 0)
+                        .frame(width: 300)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     TextField("Height(in)", text: $height)
                         .padding(.bottom, 10)
+                        .frame(width: 300)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Button("Calculate BMI") {
@@ -52,11 +54,13 @@ struct CalculatorView: View {
                 VStack {
                     Group {
                         TextField("Weight(lbs)", text: $repWeight)
+                            .frame(width: 300)
                             .padding(.bottom, 20)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         
                         TextField("Reps", text: $rep)
+                            .frame(width: 300)
                             .padding(.bottom, -5)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
@@ -82,14 +86,17 @@ struct CalculatorView: View {
                     Group {
                         
                         TextField("Age(Years)", text: $age)
+                            .frame(width: 300)
                             .padding(.bottom, 0)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         TextField("Weight(lbs)", text: $maintainWeight)
+                            .frame(width: 300)
                             .padding(.bottom, 0)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         TextField("Height(inches)", text: $height2)
+                            .frame(width: 300)
                             .padding(.bottom, -5)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
