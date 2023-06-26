@@ -9,13 +9,14 @@ import Foundation
 import Alamofire
 
 class OpenAIService {
+    let apiKey = "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"
     private let endpointUrl = "https://api.openai.com/v1/chat/completions"
     
     func sendMessage(messages: [Message]) async -> OpenAIChatResponse? {
         let openAIMessages = messages.map({OpenAIChatMessage(role: $0.role, content: $0.content)})
-        let body = OpenAIChatBody(model: "gpt-3.5-turbo", messages: openAIMessages)
+        let body = OpenAIChatBody(model: "gpt-4", messages: openAIMessages)
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer \(apiKey)"
         ]
         return try? await AF.request(endpointUrl, method: .post, parameters: body, encoder: .json, headers: headers).serializingDecodable(OpenAIChatResponse.self).value
     }

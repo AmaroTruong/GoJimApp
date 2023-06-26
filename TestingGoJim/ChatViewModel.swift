@@ -1,24 +1,25 @@
 import Foundation
 
-extension ChatView{
-    class ViewModel: ObservableObject{
-        @Published var messages: [Message] = []
+extension ChatView {
+    class ViewModel: ObservableObject {
+        @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "You are a personal trainer. You will help me to workout", createAt: Date())]
         @Published var currentInput: String = ""
-        
+
         private let openAIService = OpenAIService()
-        func sendMessage() async {
-            let newMessage = Message(id:UUID(), role: .user, content: currentInput, createAt: Date())
+
+        func sendMessage() {
+            let newMessage = Message(id: UUID(), role: .user, content: currentInput, createAt: Date())
             messages.append(newMessage)
             currentInput = ""
-            
-            Task{
+
+            Task {
                 let response = await openAIService.sendMessage(messages: messages)
                 guard let receivedOpenAIMessage = response?.choices.first?.message else {
                     print("Had no received message")
                     return
                 }
-                let receivedMessage = Message(id:UUID(), role: receivedOpenAIMessage.role, content: receivedOpenAIMessage.content, createAt: Date())
-                await MainActor.run{
+                let receivedMessage = Message(id: UUID(), role: receivedOpenAIMessage.role, content: receivedOpenAIMessage.content, createAt: Date())
+                await MainActor.run {
                     messages.append(receivedMessage)
                 }
             }
@@ -26,9 +27,7 @@ extension ChatView{
     }
 }
 
-
-
-struct Message: Decodable{
+struct Message: Decodable {
     let id: UUID
     let role: SenderRole
     let content: String
