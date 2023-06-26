@@ -12,7 +12,7 @@ struct FirstView: View {
         NavigationView {
             ZStack
             {
-                    Text("2023 just started. What a great time to start working out, but how do you start? Personal trainers and fitness apps are all paywalled and complicated. We would like to introduce GoJim!, a fitness-tracking software to track calories, log your exercises, and communicate with other gym goers.")
+                    Text("2023 just started. What a great time to start working out, but how do you start? Personal trainers and fitness apps are all paywalled and complicated. We would like to introduce GoJim!")
                         .font(.system(size:25))
                         .frame(width: 300, height: 500)
                         .position(x: 200, y: 250)

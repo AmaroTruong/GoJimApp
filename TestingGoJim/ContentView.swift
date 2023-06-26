@@ -8,7 +8,7 @@ struct ContentView: View {
                     Text("Welcome to GoJim!")
                         .font(.title)
                         .position(x: 200, y: 30)
-                    Text("Our mission is to provide affordable access to fitness-tracking instruments and dietary suggestions for all gymgoers, regardless of their expertise, in hopes to encourage the development of a healthier lifestyle!")
+                    Text("Our mission is to provide affordable access to fitness-tracking instruments for all gymgoers, regardless of their expertise, in hopes to encourage the development of a healthier lifestyle!")
                         .font(.system(size:24))
                         .frame(width: 300, height: 500)
                         .position(x: 200, y: 200)
