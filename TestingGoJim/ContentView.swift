@@ -5,30 +5,55 @@ struct ContentView: View {
         NavigationView {
             ZStack
             {
-                    Text("Welcome to GoJim!")
-                        .font(.title)
-                        .position(x: 200, y: 30)
-                    Text("Our mission is to provide affordable access to fitness-tracking instruments for all gymgoers, regardless of their expertise, in hopes to encourage the development of a healthier lifestyle!")
-                        .font(.system(size:24))
-                        .frame(width: 300, height: 500)
-                        .position(x: 200, y: 200)
-                Rectangle()
-                    .fill(.red)
-                    .frame(width: 1200, height: 400)
-                    .position(x: 110 , y: 100)
-                    .rotationEffect(Angle(degrees: 150))
-                NavigationLink(destination: FirstView().navigationBarBackButtonHidden(true)) {
-                    Text("Continue")
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 40)
-                        .background(.black)
-                        .cornerRadius(15)
-                        .padding()
-                }.frame(maxHeight: .infinity, alignment: .bottom)
+                Color("LightRed")
+                    .ignoresSafeArea()
+                Image(systemName: "dumbbell")
+                    .font(.system(size:120))
+                    .position(x: 100 , y: 140)
+                    .rotationEffect(Angle(degrees: 225))
+                Image(systemName: "figure.run")
+                    .font(.system(size:120))
+                    .position(x: -70 , y: 270)
+                    .rotationEffect(Angle(degrees: 40))
+                Image(systemName: "figure.cooldown")
+                    .font(.system(size:100))
+                    .position(x: 380 , y: 390)
+                    .rotationEffect(Angle(degrees: -10))
                 
+                VStack{
+                    Text("GoJim!")
+                        .position(x: 210, y: 20)
+                        .font(.system(size:23))
+                    Text("Welcome Back!")
+                        .frame(width: 300, height: 300)
+                        .font(.system(size: 60))
+                        .position(x: 150, y: 110)
+                    NavigationLink(destination: FirstView().navigationBarBackButtonHidden(true)) {
+                        Label("Start", systemImage: "dumbbell")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .frame(width: 200, height: 40)
+                                    .background(Color.black)
+                                    .cornerRadius(15)
+                                    .padding()
+                    }.buttonStyle(BlackButtonStyle())
+                        .position(x: 300, y: 200)
+                        }
+                    }.frame(maxHeight: .infinity, alignment: .bottom)
+                    
+                }
             }
+    
+    struct BlackButtonStyle: ButtonStyle {
+        func makeBody(configuration: Self.Configuration) -> some View {
+            configuration.label
+                .frame(width: 150, height: 150)
+                .foregroundColor(Color.white)
+                .background(Color.black)
+                .clipShape(Circle())
         }
     }
+    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
