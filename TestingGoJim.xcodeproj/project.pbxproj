@@ -36,7 +36,6 @@
 		893A833F2A491D2700CE4104 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A833E2A491D2700CE4104 /* OpenAIService.swift */; };
 		893A83412A491D3700CE4104 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A83402A491D3700CE4104 /* ChatViewModel.swift */; };
 		893A83462A49253400CE4104 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 893A83452A49253400CE4104 /* Alamofire */; };
-		893A83482A492E9600CE4104 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 893A83472A492E9600CE4104 /* healthtips.json */; };
 		894BE2922A48B11A00DA7893 /* RunningMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2912A48B11A00DA7893 /* RunningMapView.swift */; };
 		894BE2942A48B2F000DA7893 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2932A48B2F000DA7893 /* Location.swift */; };
 		894BE29B2A48BA0400DA7893 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29A2A48BA0400DA7893 /* LocationManager.swift */; };
@@ -44,6 +43,7 @@
 		894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
 		9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */; };
+		9C578A182A4930C00056958B /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C578A172A4930C00056958B /* healthtips.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,6 @@
 		893A833C2A491D1100CE4104 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		893A833E2A491D2700CE4104 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		893A83402A491D3700CE4104 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		893A83472A492E9600CE4104 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 		894BE2912A48B11A00DA7893 /* RunningMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningMapView.swift; sourceTree = "<group>"; };
 		894BE2932A48B2F000DA7893 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		894BE2952A48B60A00DA7893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewModel.swift; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		9C578A172A4930C00056958B /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../Desktop/healthtips.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 				892CA81D2A46875F00052402 /* TestingGoJimApp.swift */,
 				892CA81F2A46875F00052402 /* ContentView.swift */,
 				8953B14C2A479C640052F567 /* ActivityModel.swift */,
-				893A83472A492E9600CE4104 /* healthtips.json */,
+				9C578A172A4930C00056958B /* healthtips.json */,
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
@@ -332,7 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */,
-				893A83482A492E9600CE4104 /* healthtips.json in Resources */,
+				9C578A182A4930C00056958B /* healthtips.json in Resources */,
 				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
