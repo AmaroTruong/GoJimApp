@@ -18,7 +18,7 @@ struct ChatView: View {
                 }
             }
             HStack {
-                TextField("Enter a message..."), text:
+                TextField("Enter a message...", text:
                 $viewModel.currentInput)
                 
                 Button {

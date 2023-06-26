@@ -1,20 +1,36 @@
-//
-//  ChatViewModel.swift
-//  TestingGoJim
-//
-//  Created by Jackie Cheng on 6/25/23.
-//
+import Foundation
 
-import SwiftUI
-
-struct ChatViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension ChatView{
+    class ViewModel: ObservableObject{
+        @Published var messages: [Message] = []
+        @Published var currentInput: String = ""
+        
+        private let openAIService = OpenAIService()
+        func sendMessage() async {
+            let newMessage = Message(id:UUID(), role: .user, content: currentInput, createAt: Date())
+            messages.append(newMessage)
+            currentInput = ""
+            
+            Task{
+                let response = await openAIService.sendMessage(messages: messages)
+                guard let receivedOpenAIMessage = response?.choices.first?.message else {
+                    print("Had no received message")
+                    return
+                }
+                let receivedMessage = Message(id:UUID(), role: receivedOpenAIMessage.role, content: receivedOpenAIMessage.content, createAt: Date())
+                await MainActor.run{
+                    messages.append(receivedMessage)
+                }
+            }
+        }
     }
 }
 
-struct ChatViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatViewModel()
-    }
+
+
+struct Message: Decodable{
+    let id: UUID
+    let role: SenderRole
+    let content: String
+    let createAt: Date
 }
