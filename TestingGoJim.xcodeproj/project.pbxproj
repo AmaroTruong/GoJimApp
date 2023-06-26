@@ -35,7 +35,7 @@
 		893A833D2A491D1100CE4104 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A833C2A491D1100CE4104 /* ChatView.swift */; };
 		893A833F2A491D2700CE4104 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A833E2A491D2700CE4104 /* OpenAIService.swift */; };
 		893A83412A491D3700CE4104 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A83402A491D3700CE4104 /* ChatViewModel.swift */; };
-		893A83432A491D6700CE4104 /* ChatGPTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A83422A491D6700CE4104 /* ChatGPTAppApp.swift */; };
+		893A83462A49253400CE4104 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 893A83452A49253400CE4104 /* Alamofire */; };
 		894BE2902A47EF5A00DA7893 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 894BE28F2A47EF5A00DA7893 /* healthtips.json */; };
 		894BE2922A48B11A00DA7893 /* RunningMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2912A48B11A00DA7893 /* RunningMapView.swift */; };
 		894BE2942A48B2F000DA7893 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE2932A48B2F000DA7893 /* Location.swift */; };
@@ -82,7 +82,6 @@
 		893A833C2A491D1100CE4104 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		893A833E2A491D2700CE4104 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		893A83402A491D3700CE4104 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		893A83422A491D6700CE4104 /* ChatGPTAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAppApp.swift; sourceTree = "<group>"; };
 		894BE28F2A47EF5A00DA7893 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 		894BE2912A48B11A00DA7893 /* RunningMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningMapView.swift; sourceTree = "<group>"; };
 		894BE2932A48B2F000DA7893 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893A83462A49253400CE4104 /* Alamofire in Frameworks */,
 				8901D00B2A469663006B09DD /* FirebaseDatabase in Frameworks */,
 				8901D0032A469663006B09DD /* FirebaseAnalytics in Frameworks */,
 				8901D0192A469663006B09DD /* FirebasePerformance in Frameworks */,
@@ -168,7 +168,6 @@
 				893A833A2A491CC700CE4104 /* AIAssistant.swift */,
 				893A833C2A491D1100CE4104 /* ChatView.swift */,
 				893A833E2A491D2700CE4104 /* OpenAIService.swift */,
-				893A83422A491D6700CE4104 /* ChatGPTAppApp.swift */,
 				893A83402A491D3700CE4104 /* ChatViewModel.swift */,
 				894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */,
 				894BE29C2A48CAE300DA7893 /* Stopwatch.swift */,
@@ -238,6 +237,7 @@
 				8901D0182A469663006B09DD /* FirebasePerformance */,
 				8901D01A2A469663006B09DD /* FirebaseRemoteConfig */,
 				8901D01C2A469663006B09DD /* FirebaseStorage */,
+				893A83452A49253400CE4104 /* Alamofire */,
 			);
 			productName = TestingGoJim;
 			productReference = 892CA81A2A46875F00052402 /* TestingGoJim.app */;
@@ -313,6 +313,7 @@
 			mainGroup = 892CA8112A46875E00052402;
 			packageReferences = (
 				8901D0012A469663006B09DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				893A83442A49253400CE4104 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 892CA81B2A46875F00052402 /* Products */;
 			projectDirPath = "";
@@ -367,7 +368,6 @@
 				894BE29D2A48CAE400DA7893 /* Stopwatch.swift in Sources */,
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
 				894BE2942A48B2F000DA7893 /* Location.swift in Sources */,
-				893A83432A491D6700CE4104 /* ChatGPTAppApp.swift in Sources */,
 				893A83412A491D3700CE4104 /* ChatViewModel.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
 				894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */,
@@ -703,6 +703,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		893A83442A49253400CE4104 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -775,6 +783,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8901D0012A469663006B09DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		893A83452A49253400CE4104 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 893A83442A49253400CE4104 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
