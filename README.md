@@ -1,6 +1,6 @@
 # GoJimApp
 
-GoJimApp is a mobile application developed for managing fitness and exercise routines. It provides users with a platform to track their workouts, set goals, and monitor their progress over time. The application interface is an extension of the GoJimWebsite. The following repository resides at:
+GoJimApp is a mobile application developed for managing fitness and exercise routines. It provides users with a platform to track their workouts, set goals, and monitor their progress over time. The application interface is an extension of the GoJimWebsite. The following repository resides at: https://github.com/JackieC2027/GoJimWebiste
 
 # Features
 
