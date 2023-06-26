@@ -53,7 +53,7 @@ struct RunningMapView: View {
                                     .foregroundColor(.black)
                                     .frame(width: 25, height: 25)
                             }
-                            NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: ChatView().navigationBarBackButtonHidden(true)) {
                                 Image(systemName: "message.fill")
                                     .resizable()
                                     .foregroundColor(.black)
