@@ -36,26 +36,27 @@ Software: XCode
 <br>
 
 <h2>Track Your Runs</h2>
-
+<img width="304" alt="Screenshot 2023-06-26 at 8 54 36 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/8c848927-2387-4b50-934e-157fe372b50e">
 <br>
 
 <h2>AI Fitness Coach</h2>
-
+<img width="251" alt="Screenshot 2023-06-26 at 8 58 25 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/1ffd77af-a8b9-45b6-9884-8483e03aa8b2">
 <br>
 
 <h2>Main Page</h2>
-
+<img width="306" alt="Screenshot 2023-06-26 at 8 58 53 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/5ba14799-5d00-4c37-9b0f-acc4d2be4d50">
 <br>
 
 <h2>Calculators</h2>
-
+<img width="321" alt="Screenshot 2023-06-26 at 8 59 42 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/411bcc65-1601-494c-b967-ecea4e0f6047">
+<br>
 
 <h2>Gallery</h2>
-
+<img width="289" alt="Screenshot 2023-06-26 at 9 00 37 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/eb44df04-603f-4954-8aca-61bbfce70ab0">
 <br>
 
 <h2>Demonstrations</h2>
-
+<img width="309" alt="Screenshot 2023-06-26 at 9 01 04 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/0cc69753-bbc6-4082-a3c4-fb2f1457678c">
 <br>
 
 
