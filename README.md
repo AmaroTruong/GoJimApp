@@ -58,7 +58,7 @@ Software: XCode
 <h2>Demonstrations</h2>
 <img width="332" alt="Screenshot 2023-06-26 at 8 33 39 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/67bf0854-0d51-420e-8c87-dfe4b22b4323">
 <img width="294" alt="Screenshot 2023-06-26 at 8 34 13 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/5580952b-a5c5-4864-8c32-32580506724c">
-<be>
+<br>
 
 
 
