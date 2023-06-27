@@ -7,6 +7,7 @@ GoJimApp is a mobile application developed for managing fitness and exercise rou
 - Fitness and Dietary Calculators
 - Cardio Tracking Capabilities
 - AI Fitness Coach
+- Workout Demonstrations 
 
 # Installation
 
