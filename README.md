@@ -49,16 +49,7 @@ Software: XCode
 
 <h2>Calculators</h2>
 <img width="500" alt="Screenshot 2023-06-26 at 1 38 09 PM" src="https://github.com/JackieC2027/GoJimApp/assets/110410844/9986e7ad-a577-4887-b714-675732affc11">
-<br>
-
-<h2>Gallery</h2>
-<img width="327" alt="Screenshot 2023-06-26 at 8 30 07 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/8506a56d-2576-4566-912e-5c63f99b59c7">
-<br>
-
-<h2>Demonstrations</h2>
-<img width="332" alt="Screenshot 2023-06-26 at 8 33 39 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/67bf0854-0d51-420e-8c87-dfe4b22b4323">
-<img width="294" alt="Screenshot 2023-06-26 at 8 34 13 PM" src="https://github.com/JackieC2027/GoJimApp/assets/137460611/5580952b-a5c5-4864-8c32-32580506724c">
-<br>
+<be>
 
 
 
