@@ -16,10 +16,13 @@ struct ChestView: View {
                 VStack {
                     GifImage("InclineDBPress")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("BarbellBench")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("PecDeck")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                 }
             }
             .navigationBarHidden(true)

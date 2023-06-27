@@ -17,10 +17,13 @@ struct LegView: View {
                 VStack {
                     GifImage("LegExtension")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("LegCurl")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("LegPress")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                 }
             }
             .navigationBarHidden(true)

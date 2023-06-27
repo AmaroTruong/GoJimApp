@@ -16,10 +16,13 @@ struct ArmsView: View {
                 VStack {
                     GifImage("DBBicepCurl")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("DBHammerCurl")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("TricepExtension")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                 }
             }
             .navigationBarHidden(true)

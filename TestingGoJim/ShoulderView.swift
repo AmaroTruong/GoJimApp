@@ -16,10 +16,13 @@ struct ShoulderView: View {
                 VStack {
                     GifImage("CableLateralRaise")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("DBLateralRaise")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("DBShoulderPress")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                 }
             }
             .navigationBarHidden(true)

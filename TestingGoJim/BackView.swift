@@ -16,10 +16,13 @@ struct BackView: View {
                 VStack {
                     GifImage("LatPulldown")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("SeatedRow")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                     GifImage("RearDeltRow")
                         .frame(width: 250, height: 250)
+                        .cornerRadius(20)
                 }
             }
             .navigationBarHidden(true)
