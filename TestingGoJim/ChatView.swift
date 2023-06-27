@@ -55,6 +55,12 @@ struct ChatView: View {
                                 .foregroundColor(.black)
                                 .frame(width: 25, height: 25)
                         }
+                        NavigationLink(destination: GalleryView().navigationBarBackButtonHidden(true)) {
+                            Image(systemName: "photo.fill")
+                                .resizable()
+                                .foregroundColor(.black)
+                                .frame(width: 25, height: 25)
+                        }
                     }
                     .position(x: 200, y: 270)
                 }.padding()

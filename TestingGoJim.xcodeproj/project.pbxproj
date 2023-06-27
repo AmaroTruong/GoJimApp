@@ -37,7 +37,6 @@
 		893A833F2A491D2700CE4104 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A833E2A491D2700CE4104 /* OpenAIService.swift */; };
 		893A83412A491D3700CE4104 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A83402A491D3700CE4104 /* ChatViewModel.swift */; };
 		893A83462A49253400CE4104 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 893A83452A49253400CE4104 /* Alamofire */; };
-		893A834A2A49367100CE4104 /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 893A83492A49367100CE4104 /* healthtips.json */; };
 		893A834C2A4956E100CE4104 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A834B2A4956E100CE4104 /* MapViewRepresentable.swift */; };
 		893A834E2A49585000CE4104 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A834D2A49585000CE4104 /* Test.swift */; };
 		893A83502A49594200CE4104 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A834F2A49594200CE4104 /* LocationManager.swift */; };
@@ -46,6 +45,29 @@
 		894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */; };
 		8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953B14C2A479C640052F567 /* ActivityModel.swift */; };
 		9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */; };
+		9C55B62A2A4A54E1004B8335 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B6292A4A54E1004B8335 /* GifImage.swift */; };
+		9C55B62C2A4A5702004B8335 /* ChestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B62B2A4A5702004B8335 /* ChestView.swift */; };
+		9C55B62E2A4A5775004B8335 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B62D2A4A5775004B8335 /* BackView.swift */; };
+		9C55B6302A4A5885004B8335 /* SeatedRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B62F2A4A5885004B8335 /* SeatedRow.gif */; };
+		9C55B6322A4A5888004B8335 /* RearDeltRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6312A4A5888004B8335 /* RearDeltRow.gif */; };
+		9C55B6342A4A588B004B8335 /* LatPulldown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6332A4A588B004B8335 /* LatPulldown.gif */; };
+		9C55B6362A4A58D9004B8335 /* BarbellBench.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6352A4A58D9004B8335 /* BarbellBench.gif */; };
+		9C55B6382A4A58E1004B8335 /* InclineDBPress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6372A4A58E1004B8335 /* InclineDBPress.gif */; };
+		9C55B63A2A4A58EB004B8335 /* PecDeck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6392A4A58EB004B8335 /* PecDeck.gif */; };
+		9C55B63C2A4A5A1F004B8335 /* ShoulderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B63B2A4A5A1F004B8335 /* ShoulderView.swift */; };
+		9C55B63E2A4A5A25004B8335 /* CableLateralRaise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B63D2A4A5A25004B8335 /* CableLateralRaise.gif */; };
+		9C55B6402A4A5A28004B8335 /* DBShoulderPress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B63F2A4A5A28004B8335 /* DBShoulderPress.gif */; };
+		9C55B6422A4A5A2B004B8335 /* DBLateralRaise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6412A4A5A2B004B8335 /* DBLateralRaise.gif */; };
+		9C55B6442A4A5AD4004B8335 /* ArmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B6432A4A5AD4004B8335 /* ArmsView.swift */; };
+		9C55B6462A4A5B29004B8335 /* DBBicepCurl.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6452A4A5B29004B8335 /* DBBicepCurl.gif */; };
+		9C55B6482A4A5B2D004B8335 /* DBHammerCurl.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6472A4A5B2D004B8335 /* DBHammerCurl.gif */; };
+		9C55B64A2A4A5B30004B8335 /* TricepExtension.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B6492A4A5B30004B8335 /* TricepExtension.gif */; };
+		9C55B64C2A4A5C0A004B8335 /* LegCurl.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B64B2A4A5C0A004B8335 /* LegCurl.gif */; };
+		9C55B64E2A4A5C0D004B8335 /* LegPress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B64D2A4A5C0D004B8335 /* LegPress.gif */; };
+		9C55B6502A4A5C11004B8335 /* LegExtension.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C55B64F2A4A5C11004B8335 /* LegExtension.gif */; };
+		9C55B6522A4A5C19004B8335 /* LegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55B6512A4A5C19004B8335 /* LegView.swift */; };
+		9C943D782A4A4E4F0029E3AC /* healthtips.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C943D772A4A4E4F0029E3AC /* healthtips.json */; };
+		9C943D802A4A4E770029E3AC /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C943D7F2A4A4E770029E3AC /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +107,6 @@
 		893A833C2A491D1100CE4104 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		893A833E2A491D2700CE4104 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		893A83402A491D3700CE4104 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		893A83492A49367100CE4104 /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = healthtips.json; path = ../../../Downloads/healthtips.json; sourceTree = "<group>"; };
 		893A834B2A4956E100CE4104 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 		893A834D2A49585000CE4104 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		893A834F2A49594200CE4104 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = ../LocationManager.swift; sourceTree = "<group>"; };
@@ -95,6 +116,29 @@
 		894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewModel.swift; sourceTree = "<group>"; };
 		8953B14C2A479C640052F567 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9C53E7B12A47CFB10027BF75 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		9C55B6292A4A54E1004B8335 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		9C55B62B2A4A5702004B8335 /* ChestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestView.swift; sourceTree = "<group>"; };
+		9C55B62D2A4A5775004B8335 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		9C55B62F2A4A5885004B8335 /* SeatedRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SeatedRow.gif; sourceTree = "<group>"; };
+		9C55B6312A4A5888004B8335 /* RearDeltRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RearDeltRow.gif; sourceTree = "<group>"; };
+		9C55B6332A4A588B004B8335 /* LatPulldown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LatPulldown.gif; sourceTree = "<group>"; };
+		9C55B6352A4A58D9004B8335 /* BarbellBench.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BarbellBench.gif; sourceTree = "<group>"; };
+		9C55B6372A4A58E1004B8335 /* InclineDBPress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = InclineDBPress.gif; sourceTree = "<group>"; };
+		9C55B6392A4A58EB004B8335 /* PecDeck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PecDeck.gif; sourceTree = "<group>"; };
+		9C55B63B2A4A5A1F004B8335 /* ShoulderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderView.swift; sourceTree = "<group>"; };
+		9C55B63D2A4A5A25004B8335 /* CableLateralRaise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CableLateralRaise.gif; sourceTree = "<group>"; };
+		9C55B63F2A4A5A28004B8335 /* DBShoulderPress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DBShoulderPress.gif; sourceTree = "<group>"; };
+		9C55B6412A4A5A2B004B8335 /* DBLateralRaise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DBLateralRaise.gif; sourceTree = "<group>"; };
+		9C55B6432A4A5AD4004B8335 /* ArmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmsView.swift; sourceTree = "<group>"; };
+		9C55B6452A4A5B29004B8335 /* DBBicepCurl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DBBicepCurl.gif; sourceTree = "<group>"; };
+		9C55B6472A4A5B2D004B8335 /* DBHammerCurl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DBHammerCurl.gif; sourceTree = "<group>"; };
+		9C55B6492A4A5B30004B8335 /* TricepExtension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TricepExtension.gif; sourceTree = "<group>"; };
+		9C55B64B2A4A5C0A004B8335 /* LegCurl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LegCurl.gif; sourceTree = "<group>"; };
+		9C55B64D2A4A5C0D004B8335 /* LegPress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LegPress.gif; sourceTree = "<group>"; };
+		9C55B64F2A4A5C11004B8335 /* LegExtension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LegExtension.gif; sourceTree = "<group>"; };
+		9C55B6512A4A5C19004B8335 /* LegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegView.swift; sourceTree = "<group>"; };
+		9C943D772A4A4E4F0029E3AC /* healthtips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = healthtips.json; sourceTree = "<group>"; };
+		9C943D7F2A4A4E770029E3AC /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +210,7 @@
 				892546F72A496659005DBDCA /* RunningSteps.swift */,
 				892546F92A496B58005DBDCA /* RunningMapView.swift */,
 				8953B14C2A479C640052F567 /* ActivityModel.swift */,
-				893A83492A49367100CE4104 /* healthtips.json */,
+				9C943D772A4A4E4F0029E3AC /* healthtips.json */,
 				892CA8482A4688BE00052402 /* FirstView.swift */,
 				892CA84A2A4688D200052402 /* SecondView.swift */,
 				8901CFFD2A4693D1006B09DD /* ThirdView.swift */,
@@ -180,6 +224,28 @@
 				894BE29E2A48D69300DA7893 /* StopwatchViewModel.swift */,
 				894BE29C2A48CAE300DA7893 /* Stopwatch.swift */,
 				894BE2932A48B2F000DA7893 /* Location.swift */,
+				9C55B6292A4A54E1004B8335 /* GifImage.swift */,
+				9C943D7F2A4A4E770029E3AC /* GalleryView.swift */,
+				9C55B6352A4A58D9004B8335 /* BarbellBench.gif */,
+				9C55B6372A4A58E1004B8335 /* InclineDBPress.gif */,
+				9C55B6392A4A58EB004B8335 /* PecDeck.gif */,
+				9C55B62B2A4A5702004B8335 /* ChestView.swift */,
+				9C55B62F2A4A5885004B8335 /* SeatedRow.gif */,
+				9C55B6312A4A5888004B8335 /* RearDeltRow.gif */,
+				9C55B6332A4A588B004B8335 /* LatPulldown.gif */,
+				9C55B62D2A4A5775004B8335 /* BackView.swift */,
+				9C55B63D2A4A5A25004B8335 /* CableLateralRaise.gif */,
+				9C55B63F2A4A5A28004B8335 /* DBShoulderPress.gif */,
+				9C55B6412A4A5A2B004B8335 /* DBLateralRaise.gif */,
+				9C55B63B2A4A5A1F004B8335 /* ShoulderView.swift */,
+				9C55B6452A4A5B29004B8335 /* DBBicepCurl.gif */,
+				9C55B6472A4A5B2D004B8335 /* DBHammerCurl.gif */,
+				9C55B6492A4A5B30004B8335 /* TricepExtension.gif */,
+				9C55B6432A4A5AD4004B8335 /* ArmsView.swift */,
+				9C55B6512A4A5C19004B8335 /* LegView.swift */,
+				9C55B64B2A4A5C0A004B8335 /* LegCurl.gif */,
+				9C55B64D2A4A5C0D004B8335 /* LegPress.gif */,
+				9C55B64F2A4A5C11004B8335 /* LegExtension.gif */,
 				892CA8212A46876200052402 /* Assets.xcassets */,
 				892CA8262A46876200052402 /* TestingGoJim.entitlements */,
 				892CA8232A46876200052402 /* Preview Content */,
@@ -338,8 +404,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				892CA8252A46876200052402 /* Preview Assets.xcassets in Resources */,
-				893A834A2A49367100CE4104 /* healthtips.json in Resources */,
+				9C55B64A2A4A5B30004B8335 /* TricepExtension.gif in Resources */,
+				9C55B63A2A4A58EB004B8335 /* PecDeck.gif in Resources */,
+				9C943D782A4A4E4F0029E3AC /* healthtips.json in Resources */,
+				9C55B63E2A4A5A25004B8335 /* CableLateralRaise.gif in Resources */,
+				9C55B6322A4A5888004B8335 /* RearDeltRow.gif in Resources */,
+				9C55B6462A4A5B29004B8335 /* DBBicepCurl.gif in Resources */,
+				9C55B64E2A4A5C0D004B8335 /* LegPress.gif in Resources */,
+				9C55B6422A4A5A2B004B8335 /* DBLateralRaise.gif in Resources */,
+				9C55B6382A4A58E1004B8335 /* InclineDBPress.gif in Resources */,
 				892CA8222A46876200052402 /* Assets.xcassets in Resources */,
+				9C55B6302A4A5885004B8335 /* SeatedRow.gif in Resources */,
+				9C55B6342A4A588B004B8335 /* LatPulldown.gif in Resources */,
+				9C55B6362A4A58D9004B8335 /* BarbellBench.gif in Resources */,
+				9C55B64C2A4A5C0A004B8335 /* LegCurl.gif in Resources */,
+				9C55B6502A4A5C11004B8335 /* LegExtension.gif in Resources */,
+				9C55B6482A4A5B2D004B8335 /* DBHammerCurl.gif in Resources */,
+				9C55B6402A4A5A28004B8335 /* DBShoulderPress.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,16 +451,23 @@
 				893A834E2A49585000CE4104 /* Test.swift in Sources */,
 				893A833D2A491D1100CE4104 /* ChatView.swift in Sources */,
 				9C53E7B22A47CFB10027BF75 /* CalculatorView.swift in Sources */,
+				9C55B62C2A4A5702004B8335 /* ChestView.swift in Sources */,
+				9C55B63C2A4A5A1F004B8335 /* ShoulderView.swift in Sources */,
 				894BE29D2A48CAE400DA7893 /* Stopwatch.swift in Sources */,
 				892546FA2A496B58005DBDCA /* RunningMapView.swift in Sources */,
 				893A83502A49594200CE4104 /* LocationManager.swift in Sources */,
 				8901CFFE2A4693D1006B09DD /* ThirdView.swift in Sources */,
+				9C55B62E2A4A5775004B8335 /* BackView.swift in Sources */,
 				894BE2942A48B2F000DA7893 /* Location.swift in Sources */,
 				893A83412A491D3700CE4104 /* ChatViewModel.swift in Sources */,
+				9C55B6442A4A5AD4004B8335 /* ArmsView.swift in Sources */,
 				893A834C2A4956E100CE4104 /* MapViewRepresentable.swift in Sources */,
 				892CA81E2A46875F00052402 /* TestingGoJimApp.swift in Sources */,
+				9C55B62A2A4A54E1004B8335 /* GifImage.swift in Sources */,
 				894BE29F2A48D69300DA7893 /* StopwatchViewModel.swift in Sources */,
+				9C55B6522A4A5C19004B8335 /* LegView.swift in Sources */,
 				892CA84B2A4688D200052402 /* SecondView.swift in Sources */,
+				9C943D802A4A4E770029E3AC /* GalleryView.swift in Sources */,
 				8953B14D2A479C640052F567 /* ActivityModel.swift in Sources */,
 				892CA8492A4688BE00052402 /* FirstView.swift in Sources */,
 			);
